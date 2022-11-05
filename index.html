@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- local css -->
+    <link rel="stylesheet" href="./asset/style.css" />
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <title>Music world</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning py-3 fixed-top">
+      <div class="container">
+        <a href="javascript:void(0)" class="navbar-brand fw-bold logo">Music World</a>
+        <button
+          class="navbar-toggler text-dark"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <!-- <span class="navbar-toogle-icon"></span> -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#tracks" class="nav-link">Latest Tracks</a>
+            </li>
+            <li class="nav-item">
+              <a href="#faq" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a href="#livetrack" class="nav-link">Live</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- showcase -->
+    <section
+      id="home"
+      class="bg-dark text-light p-4 text-center text-sm-start p-lg-0 pt-lg-4"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-center">
+          <div>
+            <h1>Music <span class="text-warning"> Lover</span></h1>
+            <p class="lead my-4">
+              Lorem ipsum dolor sit aipsum dolor r sit aipsum dolor r sit aipsum
+              dolor r sit aipsum dolor sit amet.
+            </p>
+            <button
+              class="btn btn-primary btn-lg my-2"
+              data-bs-toggle="modal"
+              data-bs-target="#signup"
+            >
+              Let's Get Started
+            </button>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="/asset/images/headphone.jpg"
+            alt="headphone"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--newsletter -->
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex flex-column justify-content-around align-items-center">
+          <h3 class="mb-3 mb-md-0 p-3 text-center">Sign In</h3>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail4"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="inputPassword4"
+                placeholder="Enter your password"
+              />
+            </div>
+            <div class="d-grid col-12 d-md-flex justify-content-md-end">
+              <button type="button" class="btn btn-warning btn-lg">
+                Sign in
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- boxes -->
+    <section class="p-5 music-cards">
+      <div class="container-fluid">
+        <div class="row text-center g-2">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-file-earmark-music"></i>
+                </div>
+                <h3 class="card-title mb-3">card 1</h3>
+                <p class="card-text mb-3">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Aspernatur, deserunt?
+                </p>
+                <a href="javascript:void(0)" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-music-note-beamed"></i>
+                </div>
+                <h3 class="card-title mb-3">card 2</h3>
+                <p class="card-text mb-3">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Aspernatur, deserunt?
+                </p>
+                <a href="javascript:void(0)" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-boombox"></i>
+                </div>
+                <h3 class="card-title mb-3">card 3</h3>
+                <p class="card-text mb-3">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Aspernatur, deserunt?
+                </p>
+                <a href="javascript:void(0)" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- learning section -->
+    <section id="learn" class="p-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img class="img-fluid" src="/asset/images/cassete.jpg" alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h2>music info</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+              laborum sit. Laborum obcaecati ea doloribus reiciendis earum
+              delectus? Dolor dolorum optio unde perferendis ex asperiores vel
+              rerum obcaecati assumenda sit. Repellat, minima.
+            </p>
+            <a href="javascript:void(0)" class="btn btn-danger mt-3"
+              >Read more<i class="bi bi-chevron-compact-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>music info</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+              laborum sit. Laborum obcaecati ea doloribus reiciendis earum
+              delectus? Dolor dolorum optio unde perferendis ex asperiores vel
+              rerum obcaecati assumenda sit. Repellat, minima.
+            </p>
+            <a href="javascript:void(0)" class="btn btn-light mt-3"
+              >Read more<i class="bi bi-chevron-compact-right"></i
+            ></a>
+          </div>
+          <div class="col-md">
+            <img class="img-fluid" src="/asset/images/cassete.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- faq -->
+    <section id="faq" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4 bg-primary py-4 text-light">
+          Frequently Asked Questions
+        </h2>
+        <div
+          class="accordion accordion-flush border border-warning"
+          id="accordionFlushExample"
+        >
+          <!-- item - 1 -->
+          <div class="accordion-item bg-warning text-light">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed bg-dark text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                What is it?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#faq"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, officiis?
+              </div>
+            </div>
+          </div>
+          <!-- item - 2 -->
+          <div class="accordion-item bg-warning text-light">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed bg-dark text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                How much does it cost?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur facere digbus equatur
+                fugit sapiente iste labore n iciis accusamus corporis beatae
+                similique v dolores rem!
+              </div>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div class="accordion-item bg-warning text-light">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed bg-dark text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Where I can Use it?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">Lorem ipsum dolor sit amet.</div>
+            </div>
+          </div>
+          <!-- item - 4 -->
+          <div class="accordion-item bg-warning text-light">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button collapsed bg-dark text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                How do I cancel?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate.
+              </div>
+            </div>
+          </div>
+          <!-- item - 5 -->
+          <div class="accordion-item bg-warning text-light">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button
+                class="accordion-button collapsed bg-dark text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                What can I listen on this?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, quidem?
+              </div>
+            </div>
+          </div>
+          <!-- item - 6 -->
+          <div class="accordion-item bg-warning text-light">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button
+                class="accordion-button collapsed bg-dark text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix"
+                aria-expanded="false"
+                aria-controls="flush-collapseSix"
+              >
+                How to subscribe?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingSix"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">Lorem ipsum dolor sit amet.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- latest tracks -->
+    <section id="tracks" class="p-5 bg-primary">
+      <div class="container">
+        <h2 class="text-center text-white">Latest Tracks</h2>
+        <p class="lead text-center text-white mb-5">
+          Lorem ipsum dolor sit amet.
+        </p>
+        <div class="row g-4">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="/asset/images/cassete.jpg"
+                  class="w-100 mb-3"
+                  alt="song"
+                />
+
+                <h3 class="card-title mb-3">First Track</h3>
+                <p class="card-text mb-0">Singer - ABC</p>
+                <p>
+                  Lorem ipsum dolor sit amepsum dolor sit amepsum dolor sit
+                  amet.
+                </p>
+
+                <a class="btn btn-primary text-light">
+                  <i class="fa-solid fa-headphones-simple pe-2"></i> Listen
+                  Now</a
+                >
+                <div class="text-center mt-2">
+                  <h5 class="card-title my-3">Listen Here Also</h5>
+                  <a href="javascript:void(0)"><i class="fa-brands fa-spotify"></i></a>
+                  <a href="javascript:void(0)"> <i class="fa-brands fa-youtube"></i> </a>
+                  <a href="javascript:void(0)"> <i class="fa-brands fa-soundcloud"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <div>
+                  <img
+                    src="/asset/images/cassete.jpg"
+                    class="img-fluid mb-3 img-thumbnail"
+                    alt="song"
+                  />
+                </div>
+                <h3 class="card-title mb-3">First Track</h3>
+                <p class="card-text mb-0">Singer - ABC</p>
+                <p>
+                  Lorem ipsum dolor sit amepsum dolor sit amepsum dolor sit
+                  amet.
+                </p>
+
+                <a class="btn btn-primary text-light">
+                  <i class="fa-solid fa-headphones-simple pe-2"></i> Listen
+                  Now</a
+                >
+                <div class="text-center mt-2">
+                  <h5 class="card-title my-3">Listen Here Also</h5>
+                  <a href="javascript:void(0)"><i class="fa-brands fa-spotify"></i></a>
+                  <a href="javascript:void(0)"> <i class="fa-brands fa-youtube"></i> </a>
+                  <a href="javascript:void(0)"> <i class="fa-brands fa-soundcloud"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <div>
+                  <img
+                    src="/asset/images/cassete.jpg"
+                    class="img-fluid mb-3 img-thumbnail"
+                    alt="song"
+                  />
+                </div>
+                <h3 class="card-title mb-3">First Track</h3>
+                <p class="card-text mb-0">Singer - ABC</p>
+                <p>
+                  Lorem ipsum dolor sit amepsum dolor sit amepsum dolor sit
+                  amet.
+                </p>
+
+                <a class="btn btn-primary text-light">
+                  <i class="fa-solid fa-headphones-simple pe-2"></i> Listen
+                  Now</a
+                >
+                <div class="text-center mt-2">
+                  <h5 class="card-title my-3">Listen Here Also</h5>
+                  <a href="javascript:void(0)"><i class="fa-brands fa-spotify"></i></a>
+                  <a href="javascript:void(0)"> <i class="fa-brands fa-youtube"></i> </a>
+                  <a href="javascript:void(0)"> <i class="fa-brands fa-soundcloud"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- live section -->
+    <section id="livetrack" class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <div class="text-center mb-4"><h2>Live Tracks</h2></div>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Trending</span
+                ><a href="javascript:void(0)" class="m-2 text-decoration-none"
+                  >New English Songs</a
+                >
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Popular</span
+                ><a href="javascript:void(0)" class="m-2 text-decoration-none"
+                  >Check Out These</a
+                >
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Hitlist</span
+                ><a href="javascript:void(0)" class="m-2 text-decoration-none"
+                  >Check Out These</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <div id="player" class="mt-4">
+              <iframe
+                src="https://www.youtube.com/embed/w5GrxfjuTTI"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="p-4 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2022 Music World</p>
+        <a href="javascript:void(0)" class="position-absolute bottom-0 end-0 p-4"
+          ><span
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="Go to Top"
+          >
+            <i class="bi bi-arrow-up-circle h1"></i
+          ></span>
+        </a>
+      </div>
+    </footer>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="signup"
+      tabindex="-1"
+      aria-labelledby="signupLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Welcome Music Lover
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="h4">Fill out this registration form</p>
+            <form action="#">
+              <div class="mb-3">
+                <label for="name" class="col-form-label"
+                  >Name<span class="text-danger mx-1">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label"
+                  >Email<span class="text-danger mx-1">*</span></label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="col-form-label"
+                  >Password<span class="text-danger mx-1">*</span></label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Set a password"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-warning">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+    <script>
+      var myModal = document.getElementById("myModal");
+      var myInput = document.getElementById("myInput");
+
+      myModal.addEventListener("shown.bs.modal", function () {
+        myInput.focus();
+      });
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
